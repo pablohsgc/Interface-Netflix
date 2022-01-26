@@ -1,0 +1,116 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--preto);
+    color: white;
+}
+
+header{
+    padding: 15px;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav a:hover{
+    color: white;
+}
+
+.logo-netflix{
+    height: 50px;
+    width: 180px;
+}
+
+/*Filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)100%), url("https://www.themoviedb.org/t/p/original/yaX5hliSF1rwZ9WVNbUchndjFSb.jpg");
+    background-repeat: no-repeat;
+    min-height: 400px;
+    background-size:cover;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    text-align: justify;
+    margin-right: 20px;
+}
+
+.titulo{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.5);
+    border: none;
+    color: white;
+
+    padding: 15px;
+    margin: 10px;
+    transition: .3s ease all;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.botao:hover{
+    background-color: white;
+    color: #141414;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    padding: 10px;
+}
+
+.titulo-categoria{
+    padding: 10px;
+}
+
+.item:hover{
+    border: 2px solid white;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    border-top: 2px solid #222222;
+    color: #AAA;
+}
